@@ -1,3 +1,5 @@
+/* eslint react/no-unescaped-entities: "off" */
+
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
