@@ -18,7 +18,6 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   };
 }
 
-// TODO: Replace with real data
 const industriesData = [
   {
     icon: Car,
@@ -26,7 +25,7 @@ const industriesData = [
     titleEn: 'Automotive',
     descEs: 'Optimización de líneas de ensamblaje y control de calidad automatizado',
     descEn: 'Assembly line optimization and automated quality control',
-    backgroundImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center',
+    backgroundImage: '/images/industries/automotive.jpg',
   },
   {
     icon: Pill,
@@ -34,7 +33,7 @@ const industriesData = [
     titleEn: 'Pharmaceutical',
     descEs: 'Cumplimiento regulatorio y optimización de procesos de manufactura',
     descEn: 'Regulatory compliance and manufacturing process optimization',
-    backgroundImage: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=600&fit=crop&crop=center',
+    backgroundImage: '/images/industries/pharmaceutical.jpg',
   },
   {
     icon: Cpu,
@@ -42,7 +41,7 @@ const industriesData = [
     titleEn: 'Electronics',
     descEs: 'Inspección visual automatizada y control de procesos',
     descEn: 'Automated visual inspection and process control',
-    backgroundImage: 'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=600&fit=crop&crop=center',
+    backgroundImage: '/images/industries/electronics.jpg',
   },
   {
     icon: Factory,
@@ -50,7 +49,7 @@ const industriesData = [
     titleEn: 'General Manufacturing',
     descEs: 'Soluciones personalizadas para cualquier tipo de producción',
     descEn: 'Custom solutions for any type of production',
-    backgroundImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&crop=center',
+    backgroundImage: '/images/industries/manufacturing.jpg',
   },
   {
     icon: Zap,
@@ -58,7 +57,7 @@ const industriesData = [
     titleEn: 'Energy',
     descEs: 'Optimización de redes y mantenimiento predictivo',
     descEn: 'Grid optimization and predictive maintenance',
-    backgroundImage: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop&crop=center',
+    backgroundImage: '/images/industries/energy.jpg',
   },
   {
     icon: Package,
@@ -66,7 +65,7 @@ const industriesData = [
     titleEn: 'Logistics',
     descEs: 'Optimización de rutas y gestión de inventario inteligente',
     descEn: 'Route optimization and intelligent inventory management',
-    backgroundImage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop&crop=center',
+    backgroundImage: '/images/industries/logistics.jpg',
   },
 ];
 
