@@ -39,7 +39,7 @@ export function Navbar() {
               priority
             />
           </div>
-          <span className="text-xl font-bold">IINIA</span>
+          <span className="text-xl font-bold">IINIA Industrial Intelligence & AI Solutions</span>
         </Link>
 
         {/* Desktop Navigation */}

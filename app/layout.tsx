@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 export const metadata: Metadata = {
   metadataBase: new URL('https://iinia.com'),
   title: {
-    default: 'IINIA - Industrial AI Solutions',
+    default: 'IINIA Industrial Intelligence & AI Solutions',
     template: '%s | IINIA',
   },
   description: 'Advanced industrial artificial intelligence solutions for manufacturing optimization',

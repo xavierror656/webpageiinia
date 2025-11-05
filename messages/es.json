@@ -12,11 +12,11 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Conectividad Global",
-      "title": "IA industrial desplegada sin fronteras",
-      "subtitle": "Integramos conectividad multinube, cómputo GPU dedicado y experiencia sectorial para llevar tus casos de uso de IA a producción.",
-      "supporting": "Flō Networks, EXXACTcorp y NVIDIA respaldan nuestra plataforma para garantizar disponibilidad y alto rendimiento en cualquier ubicación.",
-      "cta_primary": "Habla con un experto",
+    "eyebrow": "Conectividad Global",
+    "title": "IINIA Industrial Intelligence & AI Solutions",
+    "subtitle": "Integramos conectividad multinube, cómputo GPU dedicado y experiencia sectorial para llevar tus casos de uso de IA a producción.",
+    "supporting": "Flō Networks, EXXACTcorp y NVIDIA respaldan nuestra plataforma para garantizar disponibilidad y alto rendimiento en cualquier ubicación.",
+    "cta_primary": "Habla con un experto",
       "cta_secondary": "Ver soluciones"
     },
     "value_props": {

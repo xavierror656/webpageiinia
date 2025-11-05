@@ -17,9 +17,7 @@ type Props = {
 
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   const seo = getPageSEO(
-    locale === 'es'
-      ? 'Transformamos la Manufactura con IA Industrial'
-      : 'Transform Manufacturing with Industrial AI',
+    'IINIA Industrial Intelligence & AI Solutions',
     locale === 'es'
       ? 'Soluciones avanzadas de inteligencia artificial para optimizar tu producción'
       : 'Advanced artificial intelligence solutions to optimize your production',
