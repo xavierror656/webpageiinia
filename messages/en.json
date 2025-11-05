@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "cases": "Case Studies",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog",
+    "careers": "Careers",
+    "partners": "Partners"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Global Connectivity",
+      "title": "Industrial AI deployed without borders",
+      "subtitle": "We combine multicloud connectivity, dedicated GPU compute, and sector expertise to take your AI use cases into production.",
+      "supporting": "Flō Networks, EXXACTcorp, and NVIDIA power our platform to keep your AI operations available and high-performing anywhere.",
+      "cta_primary": "Talk to an expert",
+      "cta_secondary": "View solutions"
+    },
+    "value_props": {
+      "title": "Ecosystem ready for production",
+      "subtitle": "Infrastructure, connectivity, and industrial know-how unified in a single team.",
+      "prop_1_title": "Global Connectivity",
+      "prop_1_desc": "Flō Networks provides international connectivity and multicloud environments so our solutions stay available everywhere.",
+      "prop_2_title": "GPU Infrastructure",
+      "prop_2_desc": "EXXACTcorp and NVIDIA equip us with cutting-edge H200 SXM GPUs for high-performance AI workloads.",
+      "prop_3_title": "Industrial Expertise",
+      "prop_3_desc": "Teleflex, Hubbell, and other industrial leaders validate our solutions and co-create sector-specific use cases."
+    },
+    "case_studies": {
+      "eyebrow": "Success Stories",
+      "title": "Real impact with our clients",
+      "subtitle": "We deploy industrial AI that elevates quality, safety, and operational efficiency.",
+      "cta": "View all cases",
+      "client_prefix": "Client:",
+      "metric_label": "Key impact"
+    },
+    "allies": {
+      "eyebrow": "Strategic Allies",
+      "title": "World-class connectivity and infrastructure",
+      "subtitle": "Leading companies power our ability to deploy reliable AI at scale."
+    }
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "subtitle": " AI technology adapted to your industrial needs",
+    "view_details": "View Details"
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "subtitle": " Specialized expertise across multiple sectors"
+  },
+  "cases": {
+    "title": "Success Stories",
+    "subtitle": "Tangible, AI-driven outcomes across key industries"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "September, 2025",
+    "main_intro": "We are an artificial intelligence spin-off in Ciudad Juárez that drives talent development and creates solutions for the industry, improving efficiency, quality and competitiveness.",
+    "main_desc": "We can offer all AI solutions on public/private cloud or deploy them on-premises. We conduct technology maturity assessments using the SIRI methodology.",
+    "focus_areas_title": "Focus Areas",
+    "focus_area_1": "Computer Vision",
+    "focus_area_2": "Natural Language Processing (LLM)",
+    "focus_area_3": "Cloud and Edge Computing",
+    "llm_title": "LLM on-premises or in the cloud",
+    "llm_1": "Enterprise Systems: ERP/CRM/ITSMS/GSC/SC",
+    "llm_2": "RAG with Vector Databases",
+    "llm_3": "RBAC/ABAC and Auditing",
+    "llm_4": "MCP/Agents Execute Flows (tickets, orders, playbooks)",
+    "vision_title": "Industrial Computer Vision",
+    "vision_1_title": "Online Quality",
+    "vision_1_desc": "Automatic detection of surface defects in products",
+    "vision_2_title": "EHS Safety",
+    "vision_2_desc": "PPE monitoring, intrusion detection and access control",
+    "vision_3_title": "HR/Contractors",
+    "vision_3_desc": "Access control, compliance verification and personnel management"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": " Let's talk about how AI can transform your business",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Submit",
+      "success": "Message sent! We'll contact you soon.",
+      "error": "Error sending. Please try again."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": " Insights and trends in industrial AI",
+    "read_more": "Read more",
+    "back_to_blog": "Back to Blog"
+  },
+  "careers": {
+    "title": "Careers",
+    "subtitle": " Join our team of innovators",
+    "coming_soon": "Open positions coming soon"
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": " We collaborate with the best tech companies"
+  },
+  "footer": {
+    "tagline": " Transforming industry with artificial intelligence",
+    "company": "Company",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "follow": "Follow Us"
+  },
+  "common": {
+    "skip_to_content": "Skip to content",
+    "theme_toggle": "Toggle theme",
+    "language": "Language"
+  }
+}

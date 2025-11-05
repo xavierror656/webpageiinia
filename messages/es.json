@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "solutions": "Soluciones",
+    "industries": "Industrias",
+    "cases": "Casos de Éxito",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "blog": "Blog",
+    "careers": "Carreras",
+    "partners": "Socios"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Conectividad Global",
+      "title": "IA industrial desplegada sin fronteras",
+      "subtitle": "Integramos conectividad multinube, cómputo GPU dedicado y experiencia sectorial para llevar tus casos de uso de IA a producción.",
+      "supporting": "Flō Networks, EXXACTcorp y NVIDIA respaldan nuestra plataforma para garantizar disponibilidad y alto rendimiento en cualquier ubicación.",
+      "cta_primary": "Habla con un experto",
+      "cta_secondary": "Ver soluciones"
+    },
+    "value_props": {
+      "title": "Ecosistema listo para producción",
+      "subtitle": "Infraestructura, conectividad y conocimientos industriales integrados en un solo equipo.",
+      "prop_1_title": "Conectividad Global",
+      "prop_1_desc": "Flō Networks nos proporciona conectividad internacional y entornos multicloud para garantizar la disponibilidad de nuestras soluciones en cualquier lugar.",
+      "prop_2_title": "Infraestructura GPU",
+      "prop_2_desc": "EXXACTcorp y NVIDIA nos equipan con las GPUs H200 SXM más avanzadas para procesamiento de IA de alto rendimiento.",
+      "prop_3_title": "Expertise Industrial",
+      "prop_3_desc": "Teleflex, Hubbell y otros líderes industriales validan nuestras soluciones y co-crean casos de uso específicos para cada sector."
+    },
+    "case_studies": {
+      "eyebrow": "Casos de Éxito",
+      "title": "Impacto real con nuestros clientes",
+      "subtitle": "Aplicamos IA industrial para mejorar la calidad, la seguridad y la eficiencia operativa.",
+      "cta": "Ver todos los casos",
+      "client_prefix": "Cliente:",
+      "metric_label": "Impacto destacado"
+    },
+    "allies": {
+      "eyebrow": "Aliados Estratégicos",
+      "title": "Conectividad e infraestructura de clase mundial",
+      "subtitle": "Nos respaldan compañías líderes para desplegar IA confiable a escala."
+    }
+  },
+  "solutions": {
+    "title": "Nuestras Soluciones",
+    "subtitle": " Tecnología de IA adaptada a tus necesidades industriales",
+    "view_details": "Ver Detalles"
+  },
+  "industries": {
+    "title": "Industrias que Servimos",
+    "subtitle": " Experiencia especializada en múltiples sectores"
+  },
+  "cases": {
+    "title": "Casos de Éxito",
+    "subtitle": "Resultados tangibles impulsados por IA en sectores clave"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Septiembre, 2025",
+    "main_intro": "Somos un spin-off de inteligencia artificial en Ciudad Juárez que impulsa el desarrollo de talento y crea soluciones para la industria, mejorando eficiencia, calidad y competitividad.",
+    "main_desc": "Podemos ofrecer todas las soluciones de IA sobre la nube pública/privada o implementarlas en sitio (on-premises). Realizamos evaluaciones de madurez tecnológica, con la metodología SIRI.",
+    "focus_areas_title": "Áreas de Enfoque",
+    "focus_area_1": "Visión por computadora",
+    "focus_area_2": "Procesamiento de lenguaje natural (LLM)",
+    "focus_area_3": "Computación en la nube y en el borde (Edge Computing)",
+    "llm_title": "LLM en sitio o en la nube",
+    "llm_1": "Sistemas Empresariales: ERP/CRM/ITSMS/GSC/SC",
+    "llm_2": "RAG con Bases Vectoriales",
+    "llm_3": "RBAC/ABAC y Auditoría",
+    "llm_4": "MCP/Agentes Ejecutan Flujos (tickets, órdenes, playbooks)",
+    "vision_title": "Visión Artificial Industrial",
+    "vision_1_title": "Calidad en línea",
+    "vision_1_desc": "Detección automática de defectos superficiales en productos",
+    "vision_2_title": "Seguridad EHS",
+    "vision_2_desc": "Monitoreo de EPP, detección de intrusiones y control de acceso",
+    "vision_3_title": "RH/Contratistas",
+    "vision_3_desc": "Control de accesos, verificación de cumplimiento y gestión de personal"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": " Conversemos sobre cómo la IA puede transformar tu negocio",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "company": "Empresa",
+      "message": "Mensaje",
+      "submit": "Enviar",
+      "success": "¡Mensaje enviado! Te contactaremos pronto.",
+      "error": "Error al enviar. Intenta nuevamente."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": " Insights y tendencias en IA industrial",
+    "read_more": "Leer más",
+    "back_to_blog": "Volver al Blog"
+  },
+  "careers": {
+    "title": "Carreras",
+    "subtitle": " Únete a nuestro equipo de innovadores",
+    "coming_soon": "Próximamente dispondremos posiciones abiertas"
+  },
+  "partners": {
+    "title": "Nuestros Socios",
+    "subtitle": " Colaboramos con las mejores empresas tecnológicas"
+  },
+  "footer": {
+    "tagline": " Transformando la industria con inteligencia artificial",
+    "company": "Empresa",
+    "solutions": "Soluciones",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "follow": "Síguenos"
+  },
+  "common": {
+    "skip_to_content": "Saltar al contenido",
+    "theme_toggle": "Cambiar tema",
+    "language": "Idioma"
+  }
+}
