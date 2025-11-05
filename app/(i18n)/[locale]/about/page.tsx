@@ -216,8 +216,9 @@ export default async function AboutPage({ params: { locale } }: Props) {
                       {locale === 'es' ? 'Coordenadas' : 'Coordinates'}
                     </p>
                     <p className="text-sm text-muted-foreground font-mono">
-                      31°40'21.9"N 106°22'18.9"W
-                    </p>
+  {"31°40'21.9\"N 106°22'18.9\"W"}
+</p>
+
                   </div>
                   <div className="space-y-1">
                     <p className="text-sm font-medium text-foreground">
