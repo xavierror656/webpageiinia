@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
@@ -9,11 +9,20 @@ import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { LanguageSwitch } from './language-switch';
+import { useTheme } from 'next-themes';
 
 export function Navbar() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const logoSrc = mounted && resolvedTheme === 'light' ? '/logo_alt.webp' : '/logo.webp';
 
   const navigation = [
     { name: t('home'), href: `/${locale}` },
@@ -32,7 +41,7 @@ export function Navbar() {
         <Link href={`/${locale}`} className="flex items-center space-x-3">
           <div className="relative h-10 w-10">
             <Image
-              src="/logo.webp"
+              src={logoSrc}
               alt="IINIA Logo"
               fill
               className="object-contain"

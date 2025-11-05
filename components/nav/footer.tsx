@@ -1,14 +1,24 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { useTheme } from 'next-themes';
 
 export function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
   const locale = useLocale();
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const logoSrc = mounted && resolvedTheme === 'light' ? '/logo_alt.webp' : '/logo.webp';
 
   const companyLinks = [
     { name: tNav('about'), href: `/${locale}/about` },
@@ -44,7 +54,7 @@ export function Footer() {
             <div className="flex items-center space-x-3">
               <div className="relative h-10 w-10">
                 <Image
-                  src="/logo.webp"
+                  src={logoSrc}
                   alt="IINIA Logo"
                   fill
                   className="object-contain"
