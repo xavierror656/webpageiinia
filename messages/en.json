@@ -41,6 +41,49 @@
       "eyebrow": "Strategic Allies",
       "title": "World-class connectivity and infrastructure",
       "subtitle": "Leading companies power our ability to deploy reliable AI at scale."
+    },
+    "model_carousel": {
+      "eyebrow": "Open models spotlight",
+      "title": "Open-source models ready for production",
+      "subtitle": "We fine-tune and operate the most capable community models for industrial language and vision tasks.",
+      "items": {
+        "metaai": {
+          "name": "Llama 3"
+        },
+        "mistral": {
+          "name": "Mistral 7B"
+        },
+        "gemma": {
+          "name": "Gemma 2"
+        },
+        "qwen": {
+          "name": "Qwen 2"
+        },
+        "deepseek": {
+          "name": "DeepSeek V2"
+        },
+        "dbrx": {
+          "name": "DBRX"
+        },
+        "openai": {
+          "name": "ChatGPT"
+        },
+        "n8n": {
+          "name": "n8n"
+        },
+        "alibaba": {
+          "name": "Alibaba Cloud"
+        },
+        "huggingface": {
+          "name": "Hugging Face"
+        },
+        "ollama": {
+          "name": "Ollama"
+        },
+        "openrouter": {
+          "name": "OpenRouter"
+        }
+      }
     }
   },
   "solutions": {
@@ -110,6 +153,7 @@
     "tagline": " Transforming industry with artificial intelligence",
     "company": "Company",
     "solutions": "Solutions",
+    "contact": "Contact",
     "resources": "Resources",
     "legal": "Legal",
     "privacy": "Privacy",

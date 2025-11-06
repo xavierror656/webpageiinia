@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -46,8 +45,9 @@ export default async function SolutionsPage({ params: { locale } }: Props) {
           <FadeIn key={index} delay={index * 0.1}>
             <Card
               className={cn(
-                'glass-card h-full transition-all hover:shadow-lg hover:-translate-y-1',
-                solution.card.backgroundImage && 'relative overflow-hidden text-white'
+                'glass-card h-full transition-all hover:shadow-xl hover:-translate-y-1',
+                solution.card.backgroundImage &&
+                  'relative overflow-hidden border border-white/60 bg-white/80 dark:border-white/10 dark:bg-slate-950/70 backdrop-blur'
               )}
             >
               {solution.card.backgroundImage && (
@@ -58,7 +58,7 @@ export default async function SolutionsPage({ params: { locale } }: Props) {
                     aria-hidden="true"
                   />
                   <div
-                    className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/80 to-background/60"
+                    className="absolute inset-0 bg-gradient-to-br from-white/92 via-white/75 to-white/55 dark:from-slate-950/92 dark:via-slate-950/70 dark:to-slate-950/50 backdrop-blur-md transition-colors"
                     aria-hidden="true"
                   />
                 </>
@@ -67,7 +67,7 @@ export default async function SolutionsPage({ params: { locale } }: Props) {
                 <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-accent-500">
                   <solution.card.icon className="h-7 w-7 text-white" />
                 </div>
-                <CardTitle className="text-2xl">
+                <CardTitle className="text-2xl text-slate-900 dark:text-white">
                   {solution.card.title[localeKey]}
                 </CardTitle>
               </CardHeader>
@@ -75,7 +75,7 @@ export default async function SolutionsPage({ params: { locale } }: Props) {
                 <CardDescription
                   className={cn(
                     'mb-4 text-base text-muted-foreground',
-                    solution.card.backgroundImage && 'text-white/90'
+                    solution.card.backgroundImage && 'text-slate-800 dark:text-white/90'
                   )}
                 >
                   {solution.card.description[localeKey]}
@@ -86,7 +86,8 @@ export default async function SolutionsPage({ params: { locale } }: Props) {
                       key={tag}
                       variant="secondary"
                       className={cn(
-                        solution.card.backgroundImage && 'border-white/30 bg-white/10 text-white'
+                        solution.card.backgroundImage &&
+                          'border-slate-300/60 bg-white/65 text-slate-800 dark:border-white/25 dark:bg-white/12 dark:text-white'
                       )}
                     >
                       {tag}
@@ -97,7 +98,11 @@ export default async function SolutionsPage({ params: { locale } }: Props) {
               <CardFooter className={cn(solution.card.backgroundImage && 'relative z-10')}>
                 <Button
                   variant="ghost"
-                  className={cn('w-full', solution.card.backgroundImage && 'text-white hover:text-white')}
+                  className={cn(
+                    'w-full',
+                    solution.card.backgroundImage &&
+                      'text-slate-800 hover:text-slate-800 dark:text-white/90 dark:hover:text-white'
+                  )}
                   asChild
                 >
                   <Link href={`/${locale}/solutions/${solution.slug}`}>{t('view_details')}</Link>

@@ -42,7 +42,7 @@ export function Footer() {
     { name: 'Twitter', href: '#', icon: Twitter },
     { name: 'LinkedIn', href: '#', icon: Linkedin },
     { name: 'GitHub', href: '#', icon: Github },
-    { name: 'Email', href: 'mailto:info@iinia.com', icon: Mail },
+    { name: 'Email', href: 'mailto:contacto@iinia.ai', icon: Mail },
   ];
 
   return (
@@ -110,10 +110,10 @@ export function Footer() {
             </h3>
             <div className="space-y-2">
               <a
-                href="mailto:info@iinia.com"
+                href="mailto:contacto@iinia.ai"
                 className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                info@iinia.com
+                contacto@iinia.ai
               </a>
               <p className="text-sm text-muted-foreground">
                 Ciudad Juárez, México

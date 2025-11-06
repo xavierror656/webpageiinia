@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Scan } from 'lucide-react';
+import { Scan, BrainCircuit } from 'lucide-react';
 
 type LocalizedString = {
   en: string;
@@ -663,6 +663,631 @@ export const solutions: SolutionContent[] = [
       description: {
         es: 'La primera plataforma de visión artificial industrial con entrenamiento y despliegue local en Edge-GPU Orin. Reduce scrap, aumenta calidad y automatiza inspección en días, sin expertos en IA ni dependencia de la nube.',
         en: 'The first industrial computer vision platform with local training and deployment on Edge-GPU Orin. Reduce scrap, boost quality and automate inspection in days—without AI experts and without cloud dependency.',
+      },
+    },
+  },
+  {
+    slug: 'agents',
+    card: {
+      icon: BrainCircuit,
+      title: {
+        es: 'IINIA Agents AI Suite',
+        en: 'IINIA Agents AI Suite',
+      },
+      description: {
+        es: 'Plataforma modular de agentes inteligentes, basada en componentes open source auditables y diseñada para automatización y privacidad empresarial.',
+        en: 'Modular intelligent agents platform built on auditable open-source components and designed for enterprise automation with privacy.',
+      },
+      tags: ['Open Source', 'Private AI', 'Intelligent Agents', 'Automation', 'Document AI'],
+      backgroundImage: '/collaboration/space-ocr.webp',
+    },
+    metadata: {
+      title: {
+        es: 'IINIA Agents AI Suite',
+        en: 'IINIA Agents AI Suite',
+      },
+      description: {
+        es: 'Agentes inteligentes que automatizan procesos administrativos y operativos con privacidad empresarial.',
+        en: 'Intelligent agents that automate administrative and operational processes with enterprise-grade privacy.',
+      },
+    },
+    hero: {
+      eyebrow: {
+        es: 'Plataforma de agentes inteligentes para automatización empresarial',
+        en: 'Intelligent agents platform for enterprise automation',
+      },
+      title: {
+        es: 'Automatización cognitiva con control empresarial',
+        en: 'Cognitive automation with enterprise control',
+      },
+      description: {
+        es: 'IINIA Agents AI Suite es un sistema modular de agentes capaces de analizar documentos, ejecutar procesos complejos e interactuar con usuarios y sistemas empresariales. Combina IA generativa, componentes open source auditables, reglas corporativas y despliegue on-premise para habilitar inteligencia autónoma sin sacrificar seguridad.',
+        en: 'IINIA Agents AI Suite is a modular system of agents able to analyse documents, execute complex processes and interact with users and enterprise systems. It combines generative AI, auditable open-source components, corporate rules and on-premise deployment to deliver autonomous intelligence without compromising security.',
+      },
+      highlights: [
+        {
+          es: 'Automatiza análisis de documentos, decisiones y acciones.',
+          en: 'Automates document analysis, decisions and actions.',
+        },
+        {
+          es: 'Opera con reglas configurables y APIs corporativas.',
+          en: 'Operates with configurable rules and corporate APIs.',
+        },
+        {
+          es: 'Privacidad on-premise sin depender de la nube pública.',
+          en: 'On-premise privacy without relying on the public cloud.',
+        },
+        {
+          es: 'Agentes multilingües con stack open source y despliegue auditado.',
+          en: 'Multilingual agents with an open-source stack and auditable deployment.',
+        },
+      ],
+    },
+    valueProposition: {
+      title: {
+        es: 'Propuesta de valor',
+        en: 'Value proposition',
+      },
+      items: [
+        {
+          value: {
+            es: 'Automatización cognitiva',
+            en: 'Cognitive automation',
+          },
+          benefit: {
+            es: 'Sustituye tareas humanas repetitivas e interpretativas',
+            en: 'Replaces repetitive and interpretative human tasks',
+          },
+        },
+        {
+          value: {
+            es: 'Stack open source auditado',
+            en: 'Audited open-source stack',
+          },
+          benefit: {
+            es: 'Transparencia, personalización y cero dependencia propietaria',
+            en: 'Transparency, customisation and zero proprietary lock-in',
+          },
+        },
+        {
+          value: {
+            es: 'Procesamiento automático de documentos',
+            en: 'Automated document processing',
+          },
+          benefit: {
+            es: 'Reduce tiempos de revisión y captura',
+            en: 'Cuts review and data entry times',
+          },
+        },
+        {
+          value: {
+            es: 'IA con reglas de negocio',
+            en: 'AI with business rules',
+          },
+          benefit: {
+            es: 'Control total y cumplimiento',
+            en: 'Delivers full control and compliance',
+          },
+        },
+        {
+          value: {
+            es: 'Entrenamiento continuo',
+            en: 'Continuous training',
+          },
+          benefit: {
+            es: 'Mejora progresiva sin intervención del usuario',
+            en: 'Improves accuracy without user intervention',
+          },
+        },
+        {
+          value: {
+            es: 'API para integración',
+            en: 'Integration API',
+          },
+          benefit: {
+            es: 'Conecta ERP, CRM y sistemas financieros',
+            en: 'Connects ERP, CRM and financial platforms',
+          },
+        },
+        {
+          value: {
+            es: 'Privacidad on-premise',
+            en: 'On-premise privacy',
+          },
+          benefit: {
+            es: 'Datos sensibles protegidos',
+            en: 'Keeps sensitive data protected',
+          },
+        },
+      ],
+    },
+    features: {
+      title: {
+        es: '¿Qué hace?',
+        en: 'What it does',
+      },
+      items: [
+        {
+          module: {
+            es: 'Análisis de procesos',
+            en: 'Process analysis',
+          },
+          functionality: {
+            es: 'Mapea flujos con reglas de negocio configurables.',
+            en: 'Maps flows with configurable business rules.',
+          },
+        },
+        {
+          module: {
+            es: 'Gestión de datasets',
+            en: 'Dataset management',
+          },
+          functionality: {
+            es: 'Creación y expansión de datasets empresariales.',
+            en: 'Creates and expands enterprise datasets.',
+          },
+        },
+        {
+          module: {
+            es: 'Prompt engineering',
+            en: 'Prompt engineering',
+          },
+          functionality: {
+            es: 'Plantillas y gobierno de prompts a nivel corporativo.',
+            en: 'Corporate-level prompt templates and governance.',
+          },
+        },
+        {
+          module: {
+            es: 'Document AI',
+            en: 'Document automation',
+          },
+          functionality: {
+            es: 'Procesa PDF, XLS, XML, facturas y estados de cuenta.',
+            en: 'Processes PDFs, spreadsheets, XML, invoices and statements.',
+          },
+        },
+        {
+          module: {
+            es: 'Orquestación de agentes',
+            en: 'Agent orchestration',
+          },
+          functionality: {
+            es: 'Configura y coordina agentes inteligentes por flujo.',
+            en: 'Configures and coordinates intelligent agents per workflow.',
+          },
+        },
+        {
+          module: {
+            es: 'API segura',
+            en: 'Secure API',
+          },
+          functionality: {
+            es: 'REST, webhooks y conectores hacia sistemas externos.',
+            en: 'REST, webhooks and connectors to external systems.',
+          },
+        },
+        {
+          module: {
+            es: 'Chat corporativo',
+            en: 'Corporate chat',
+          },
+          functionality: {
+            es: 'Interfaz multilenguaje para usuarios y equipos.',
+            en: 'Multilingual interface for users and teams.',
+          },
+        },
+        {
+          module: {
+            es: 'Agentes autónomos',
+            en: 'Autonomous agents',
+          },
+          functionality: {
+            es: 'Ejecutan acciones y decisiones supervisadas.',
+            en: 'Execute supervised decisions and actions.',
+          },
+        },
+      ],
+    },
+    hardware: {
+      title: {
+        es: 'Componentes del sistema',
+        en: 'System components',
+      },
+      items: [
+        {
+          name: {
+            es: 'Motor IA empresarial',
+            en: 'Enterprise AI engine',
+          },
+          bullets: [
+            {
+              es: 'Motor IA propio con seguridad empresarial.',
+              en: 'Proprietary AI engine with enterprise security.',
+            },
+            {
+              es: 'Módulo de reglas de negocio y gobierno.',
+              en: 'Business rules and governance module.',
+            },
+            {
+              es: 'Motor de prompts inteligente para flujos especializados.',
+              en: 'Intelligent prompt engine for specialised flows.',
+            },
+          ],
+          backgroundImage: '/collaboration/space-ocr.webp',
+        },
+        {
+          name: {
+            es: 'Orquestador de agentes',
+            en: 'Agent orchestrator',
+          },
+          bullets: [
+            {
+              es: 'Configuración y orquestación multi-agente.',
+              en: 'Configuration and orchestration of multiple agents.',
+            },
+            {
+              es: 'Pipeline de entrenamiento incremental supervisado.',
+              en: 'Supervised incremental training pipeline.',
+            },
+            {
+              es: 'Librería de plantillas y agentes preconfigurados.',
+              en: 'Library of templates and preconfigured agents.',
+            },
+          ],
+        },
+        {
+          name: {
+            es: 'Operación y observabilidad',
+            en: 'Operations and observability',
+          },
+          bullets: [
+            {
+              es: 'Dashboards y trazabilidad completa.',
+              en: 'Dashboards and full traceability.',
+            },
+            {
+              es: 'Integración con correo, APIs, bases de datos y ERPs.',
+              en: 'Integration with email, APIs, databases and ERPs.',
+            },
+            {
+              es: 'Capacidades de logging y auditoría por agente.',
+              en: 'Logging and audit capabilities per agent.',
+            },
+          ],
+        },
+      ],
+    },
+    useCases: {
+      title: {
+        es: 'Casos de uso destacados',
+        en: 'Highlighted use cases',
+      },
+      items: [
+        {
+          es: 'Finanzas: lectura de facturas, estados de cuenta y conciliación automática.',
+          en: 'Finance: invoice reading, account statements and automatic reconciliation.',
+        },
+        {
+          es: 'Compras/ventas: asistente para cotizaciones y órdenes.',
+          en: 'Procurement/sales: assistant for quotations and orders.',
+        },
+        {
+          es: 'Atención al cliente: chatbots especializados integrados al CRM.',
+          en: 'Customer service: specialised chatbots connected to the CRM.',
+        },
+        {
+          es: 'Recursos humanos: clasificación de CV y automatización administrativa.',
+          en: 'Human resources: CV classification and administrative automation.',
+        },
+        {
+          es: 'Legal: análisis de contratos y extracción de cláusulas críticas.',
+          en: 'Legal: contract analysis and extraction of critical clauses.',
+        },
+        {
+          es: 'Operaciones: informes automáticos, auditoría de datos y alertas.',
+          en: 'Operations: automatic reports, data audit and alerts.',
+        },
+      ],
+    },
+    kpis: {
+      title: {
+        es: 'KPIs e impacto',
+        en: 'KPIs and impact',
+      },
+      items: [
+        {
+          indicator: {
+            es: '↓ Tiempo operativo',
+            en: '↓ Operational time',
+          },
+          impact: {
+            es: '50–90% menos esfuerzo manual',
+            en: '50–90% less manual effort',
+          },
+        },
+        {
+          indicator: {
+            es: '↓ Errores humanos',
+            en: '↓ Human errors',
+          },
+          impact: {
+            es: 'Cero errores de captura',
+            en: 'Eliminates capture errors',
+          },
+        },
+        {
+          indicator: {
+            es: '↑ Velocidad de respuesta',
+            en: '↑ Response speed',
+          },
+          impact: {
+            es: 'Respuestas en segundos',
+            en: 'Responses in seconds',
+          },
+        },
+        {
+          indicator: {
+            es: '↑ Productividad del equipo',
+            en: '↑ Team productivity',
+          },
+          impact: {
+            es: 'Personal enfocado a tareas estratégicas',
+            en: 'Teams focused on strategic work',
+          },
+        },
+      ],
+    },
+    methodology: {
+      title: {
+        es: 'Metodología de implementación',
+        en: 'Implementation methodology',
+      },
+      phases: [
+        {
+          name: {
+            es: 'Levantamiento',
+            en: 'Discovery',
+          },
+          deliverable: {
+            es: 'Identificación de flujos y reglas.',
+            en: 'Identification of flows and rules.',
+          },
+        },
+        {
+          name: {
+            es: 'PoC (1–2 semanas)',
+            en: 'PoC (1–2 weeks)',
+          },
+          deliverable: {
+            es: 'Agente funcional con datos reales.',
+            en: 'Functional agent with real data.',
+          },
+        },
+        {
+          name: {
+            es: 'Integración IT',
+            en: 'IT integration',
+          },
+          deliverable: {
+            es: 'APIs, SSO, seguridad y espacios compartidos.',
+            en: 'APIs, SSO, security and shared workspaces.',
+          },
+        },
+        {
+          name: {
+            es: 'Despliegue',
+            en: 'Deployment',
+          },
+          deliverable: {
+            es: 'Agentes operando en procesos reales.',
+            en: 'Agents operating in live processes.',
+          },
+        },
+        {
+          name: {
+            es: 'Mejora continua',
+            en: 'Continuous improvement',
+          },
+          deliverable: {
+            es: 'Expansión multi-proceso y multi-área.',
+            en: 'Multi-process and multi-area expansion.',
+          },
+        },
+      ],
+    },
+    differentiators: {
+      title: {
+        es: 'Diferenciadores clave',
+        en: 'Key differentiators',
+      },
+      items: [
+        {
+          es: 'Automatiza procesos administrativos y operativos end-to-end.',
+          en: 'Automates administrative and operational processes end-to-end.',
+        },
+        {
+          es: 'Combina IA generativa con reglas de negocio auditables.',
+          en: 'Combines generative AI with auditable business rules.',
+        },
+        {
+          es: 'Privacidad corporativa con despliegue on-premise o nube privada.',
+          en: 'Corporate privacy with on-premise or private cloud deployment.',
+        },
+        {
+          es: 'Integración nativa con APIs y sistemas empresariales existentes.',
+          en: 'Native integration with existing enterprise APIs and systems.',
+        },
+        {
+          es: 'Entrenamiento continuo supervisado para mejorar cada agente.',
+          en: 'Supervised continuous training to improve each agent.',
+        },
+        {
+          es: 'Construido sobre componentes open source auditables y soportados por IINIA.',
+          en: 'Built on auditable open-source components supported by IINIA.',
+        },
+      ],
+    },
+    plans: {
+      title: {
+        es: 'Modelos de licenciamiento',
+        en: 'Licensing models',
+      },
+      items: [
+        {
+          name: {
+            es: 'Starter',
+            en: 'Starter',
+          },
+          includes: [
+            {
+              es: 'Una área y un agente operativo.',
+              en: 'One area and one operating agent.',
+            },
+            {
+              es: 'Automatización de documentos clave.',
+              en: 'Automation for key documents.',
+            },
+            {
+              es: 'Conectores básicos y dashboards estándar.',
+              en: 'Basic connectors and standard dashboards.',
+            },
+          ],
+        },
+        {
+          name: {
+            es: 'Pro',
+            en: 'Pro',
+          },
+          includes: [
+            {
+              es: 'Multi-agente con dashboards y entrenamiento continuo.',
+              en: 'Multi-agent with dashboards and continuous training.',
+            },
+            {
+              es: 'Orquestación de flujos administrativos y comerciales.',
+              en: 'Administrative and commercial flow orchestration.',
+            },
+            {
+              es: 'Integraciones avanzadas con ERP/CRM.',
+              en: 'Advanced integrations with ERP/CRM.',
+            },
+          ],
+        },
+        {
+          name: {
+            es: 'Enterprise',
+            en: 'Enterprise',
+          },
+          includes: [
+            {
+              es: 'IA, data privacy y orquestación completa.',
+              en: 'AI, data privacy and full orchestration.',
+            },
+            {
+              es: 'Multi-área con gobierno centralizado.',
+              en: 'Multi-area with centralised governance.',
+            },
+            {
+              es: 'Operación asistida, soporte dedicado y escalamiento global.',
+              en: 'Assisted operation, dedicated support and global scaling.',
+            },
+          ],
+        },
+      ],
+      note: {
+        es: 'Disponibles en compra, suscripción o modelo híbrido.',
+        en: 'Available as purchase, subscription or hybrid model.',
+      },
+    },
+    security: {
+      title: {
+        es: 'Seguridad y privacidad',
+        en: 'Security and privacy',
+      },
+      items: [
+        {
+          es: 'Ejecución local o nube privada con aislamiento por área.',
+          en: 'Local or private cloud execution with area isolation.',
+        },
+        {
+          es: 'Cifrado de datos en tránsito y en reposo.',
+          en: 'Data encryption in transit and at rest.',
+        },
+        {
+          es: 'Logging, trazabilidad y monitoreo de agentes por rol.',
+          en: 'Logging, traceability and agent monitoring per role.',
+        },
+        {
+          es: 'Alineación a políticas ISO/ITAR/HIPAA según implementación.',
+          en: 'Alignment with ISO/ITAR/HIPAA policies per implementation.',
+        },
+        {
+          es: 'Stack open source reforzado por políticas de privacidad y gobierno de datos.',
+          en: 'Open-source stack reinforced by privacy and data governance policies.',
+        },
+      ],
+    },
+    services: {
+      title: {
+        es: 'Servicios y acompañamiento',
+        en: 'Services and enablement',
+      },
+      items: [
+        {
+          es: 'Levantamiento y diseño de flujos y reglas.',
+          en: 'Process discovery and rule design.',
+        },
+        {
+          es: 'Entrenamiento de usuarios y administradores de agentes.',
+          en: 'Training for users and agent administrators.',
+        },
+        {
+          es: 'Mesa de soporte operativo y monitoreo continuo.',
+          en: 'Operations support desk and continuous monitoring.',
+        },
+        {
+          es: 'Programas de mejora continua y adopción por área.',
+          en: 'Continuous improvement and adoption programmes per area.',
+        },
+      ],
+    },
+    keyMessages: {
+      title: {
+        es: 'Mensajes clave',
+        en: 'Key messages',
+      },
+      items: [
+        {
+          es: 'Automatiza back-office, ventas y soporte con agentes inteligentes.',
+          en: 'Automates back-office, sales and support with intelligent agents.',
+        },
+        {
+          es: 'Privacidad y control con reglas auditables y despliegue on-premise.',
+          en: 'Privacy and control with auditable rules and on-premise deployment.',
+        },
+        {
+          es: 'Integra datos y APIs existentes sin fricción.',
+          en: 'Integrates existing data and APIs without friction.',
+        },
+        {
+          es: 'Escala mediante entrenamiento continuo supervisado.',
+          en: 'Scales through supervised continuous training.',
+        },
+        {
+          es: 'Beneficia la privacidad y soberanía de datos gracias a tecnologías open source.',
+          en: 'Strengthens privacy and data sovereignty through open-source technologies.',
+        },
+      ],
+    },
+    pitch: {
+      title: {
+        es: 'Pitch ejecutivo',
+        en: 'Executive pitch',
+      },
+      description: {
+        es: 'IINIA Agents AI Suite convierte procesos administrativos y operativos en flujos autónomos: agentes inteligentes que leen documentos, toman decisiones y ejecutan acciones con control empresarial y privacidad total.',
+        en: 'IINIA Agents AI Suite turns administrative and operational processes into autonomous flows: intelligent agents that read documents, make decisions and execute actions with full enterprise control and privacy.',
       },
     },
   },

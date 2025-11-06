@@ -24,8 +24,8 @@ const contactInfo = [
     icon: Mail,
     labelEs: ' Email',
     labelEn: ' Email',
-    value: 'info@iinia.com',
-    href: 'mailto:info@iinia.com',
+    value: 'contacto@iinia.ai',
+    href: 'mailto:contacto@iinia.ai',
   },
   {
     icon: Phone,

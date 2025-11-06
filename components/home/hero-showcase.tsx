@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -235,9 +236,11 @@ function ChatUI() {
         <div className="flex items-center gap-3">
           <div className="relative h-8 w-8 rounded-full bg-gradient-to-br from-brand-600 to-accent-500 p-1">
             <div className="h-full w-full rounded-full bg-slate-950 flex items-center justify-center overflow-hidden">
-              <img
+              <Image
                 src="/logo.webp"
                 alt="INIIA Logo"
+                width={20}
+                height={20}
                 className="h-5 w-5 object-contain"
               />
             </div>
@@ -296,9 +299,11 @@ function ChatUI() {
               {message.role === 'assistant' && (
                 <div className="relative h-8 w-8 rounded-full bg-gradient-to-br from-brand-600 to-accent-500 flex-shrink-0 mt-1">
                   <div className="h-full w-full rounded-full bg-slate-950 flex items-center justify-center overflow-hidden">
-                    <img
+                    <Image
                       src="/logo.webp"
                       alt="INIIA Logo"
+                      width={16}
+                      height={16}
                       className="h-4 w-4 object-contain"
                     />
                   </div>
@@ -341,9 +346,11 @@ function ChatUI() {
             <div className="flex gap-3 justify-start animate-in slide-in-from-bottom-2 duration-300">
               <div className="relative h-8 w-8 rounded-full bg-gradient-to-br from-brand-600 to-accent-500 flex-shrink-0">
                 <div className="h-full w-full rounded-full bg-slate-950 flex items-center justify-center overflow-hidden">
-                  <img
+                  <Image
                     src="/logo.webp"
                     alt="INIIA Logo"
+                    width={16}
+                    height={16}
                     className="h-4 w-4 object-contain animate-pulse"
                   />
                 </div>
@@ -423,4 +430,3 @@ function ChatUI() {
     </div>
   );
 }
-

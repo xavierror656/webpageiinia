@@ -5,6 +5,7 @@ import { getTranslations } from 'next-intl/server';
 import { caseStudies } from '@/content/case-studies';
 import { getPageSEO } from '@/lib/seo';
 import { Hero } from '@/components/home/hero';
+import { ModelCarousel } from '@/components/home/model-carousel';
 import { AlliesSection } from '@/components/home/allies';
 import { ValueProps } from '@/components/home/value-props';
 import { FadeIn } from '@/components/anim/fade-in';
@@ -63,6 +64,11 @@ export default async function HomePage({ params: { locale } }: Props) {
         }}
       />
       <ValueProps />
+      <div className="container mx-auto px-4 mt-16 lg:mt-24">
+        <FadeIn>
+          <ModelCarousel />
+        </FadeIn>
+      </div>
 
       <section id="cases" className="relative py-24">
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-600/10 via-transparent to-transparent dark:from-brand-600/20" />
