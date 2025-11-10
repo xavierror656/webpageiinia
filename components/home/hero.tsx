@@ -1,12 +1,27 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ParticlesBackground } from '@/components/graphics/particles';
 import { FadeIn } from '@/components/anim/fade-in';
-import { HeroShowcase } from '@/components/home/hero-showcase';
 import { ArrowRight, Sparkles } from 'lucide-react';
+
+const ParticlesBackground = dynamic(
+  () =>
+    import('@/components/graphics/particles').then((mod) => ({
+      default: mod.ParticlesBackground,
+    })),
+  { ssr: false, loading: () => null }
+);
+
+const HeroShowcase = dynamic(
+  () =>
+    import('@/components/home/hero-showcase').then((mod) => ({
+      default: mod.HeroShowcase,
+    })),
+  { ssr: false, loading: () => <HeroShowcaseSkeleton /> }
+);
 
 export function Hero() {
   const t = useTranslations('home.hero');
@@ -53,5 +68,14 @@ export function Hero() {
         </FadeIn>
       </div>
     </section>
+  );
+}
+
+function HeroShowcaseSkeleton() {
+  return (
+    <div className="relative overflow-hidden rounded-3xl border border-dashed border-border bg-muted/40 p-4 shadow-inner shadow-black/5 sm:p-6">
+      <div className="mb-4 h-6 w-40 animate-pulse rounded-full bg-muted sm:mx-auto" />
+      <div className="h-[400px] w-full animate-pulse rounded-[28px] bg-muted sm:h-[500px] lg:h-[560px]" />
+    </div>
   );
 }

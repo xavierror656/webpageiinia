@@ -37,10 +37,7 @@ export function HeroShowcase() {
   );
 
   return (
-    <div className="relative overflow-hidden rounded-3xl border border-brand-600/30 bg-background/75 shadow-xl shadow-brand-600/15">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-brand-600/25 via-transparent to-accent-500/15 dark:from-brand-600/35 dark:to-accent-500/25" />
-      <div className="pointer-events-none absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top,_rgba(255,63,127,0.12),_transparent_55%)]" />
-
+    <div className="relative overflow-hidden rounded-3xl border border-brand-600/30 bg-transparent shadow-xl shadow-brand-600/15 backdrop-blur-sm">
       <div className="flex flex-col gap-6 p-4 sm:p-6">
         <div className="flex items-center justify-between gap-4">
           <div className="inline-flex items-center gap-2 rounded-full border border-brand-600/20 bg-brand-600/10 px-3 py-1 text-xs font-semibold text-brand-600 dark:border-brand-600/40 dark:bg-brand-600/20">
@@ -57,7 +54,7 @@ export function HeroShowcase() {
           </button>
         </div>
 
-        <div className="relative h-[400px] w-full overflow-hidden rounded-[28px] border border-white/10 bg-black/70 shadow-inner shadow-black/40 sm:h-[500px] lg:h-[560px]">
+        <div className="relative h-[400px] w-full overflow-hidden rounded-[28px] border border-border/60 bg-transparent shadow-inner shadow-black/10 sm:h-[500px] lg:h-[560px]">
           {mode === 'video' ? (
             <video
               key="vision-video"
@@ -77,7 +74,6 @@ export function HeroShowcase() {
           ) : (
             <ChatUI />
           )}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent" />
         </div>
 
         <div className="flex items-center justify-center gap-2">
@@ -230,12 +226,12 @@ function ChatUI() {
   };
 
   return (
-    <div className="relative flex h-full w-full flex-col bg-slate-950">
+    <div className="relative flex h-full w-full flex-col bg-transparent text-foreground dark:text-white">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
+      <div className="mb-4 flex items-center justify-between rounded-2xl border border-border/60 bg-background/90 px-6 py-4 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5">
         <div className="flex items-center gap-3">
           <div className="relative h-8 w-8 rounded-full bg-gradient-to-br from-brand-600 to-accent-500 p-1">
-            <div className="h-full w-full rounded-full bg-slate-950 flex items-center justify-center overflow-hidden">
+            <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-background dark:bg-slate-950">
               <Image
                 src="/logo.webp"
                 alt="INIIA Logo"
@@ -247,13 +243,13 @@ function ChatUI() {
             <div className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-green-400 animate-pulse" />
           </div>
           <div>
-            <p className="text-sm font-semibold text-white flex items-center gap-2">
+            <p className="flex items-center gap-2 text-sm font-semibold">
               {language === 'es' ? 'Chat Privado INIIA' : 'Private INIIA Chat'}
               <svg className="h-4 w-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </p>
-            <p className="text-xs text-white/60">
+            <p className="text-xs text-muted-foreground dark:text-white/70">
               {language === 'es' ? 'IA privada · Datos seguros · Sin límites' : 'Private AI · Secure Data · No Limits'}
             </p>
           </div>
@@ -261,14 +257,14 @@ function ChatUI() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
-            className="rounded-lg border border-white/20 bg-black/40 px-3 py-2 text-sm text-white hover:border-white/30 transition-all flex items-center gap-1"
+            className="flex items-center gap-1 rounded-lg border border-border/60 bg-white/80 px-3 py-2 text-sm text-foreground transition-all hover:border-brand-600 hover:bg-white dark:border-white/20 dark:bg-white/10 dark:text-white"
           >
             <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
             </svg>
             <span>{language.toUpperCase()}</span>
           </button>
-          <div className="hidden sm:flex items-center gap-1 text-xs text-green-400">
+          <div className="hidden items-center gap-1 text-xs text-green-500 sm:flex">
             <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
@@ -277,7 +273,7 @@ function ChatUI() {
           <select
             value={selectedModel}
             onChange={(e) => setSelectedModel(e.target.value as LLMModel)}
-            className="rounded-lg border border-white/20 bg-black/40 px-3 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-brand-500/70 transition-all hover:border-white/30"
+            className="rounded-lg border border-border/60 bg-white/80 px-3 py-2 text-sm text-foreground transition focus:outline-none focus:ring-2 focus:ring-brand-500/70 hover:border-brand-600 dark:border-white/20 dark:bg-white/10 dark:text-white"
           >
             <option value="Llama-3.1-70B">🔒 Llama-3.1-70B</option>
             <option value="Mixtral-8x7B">🔒 Mixtral-8x7B</option>
@@ -289,7 +285,7 @@ function ChatUI() {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-6 py-4">
+      <div className="flex-1 overflow-y-auto rounded-2xl border border-border/60 bg-background/80 px-6 py-4 shadow-inner backdrop-blur dark:border-white/10 dark:bg-white/5">
         <div className="space-y-4">
           {messages.map((message, index) => (
             <div key={message.id} className={cn(
@@ -298,7 +294,7 @@ function ChatUI() {
             )} style={{ animationDelay: `${index * 100}ms` }}>
               {message.role === 'assistant' && (
                 <div className="relative h-8 w-8 rounded-full bg-gradient-to-br from-brand-600 to-accent-500 flex-shrink-0 mt-1">
-                  <div className="h-full w-full rounded-full bg-slate-950 flex items-center justify-center overflow-hidden">
+                  <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-background dark:bg-slate-950">
                     <Image
                       src="/logo.webp"
                       alt="INIIA Logo"
@@ -307,7 +303,7 @@ function ChatUI() {
                       className="h-4 w-4 object-contain"
                     />
                   </div>
-                  <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-green-400 border border-slate-950 animate-pulse" />
+                  <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full border border-background bg-green-400 animate-pulse dark:border-slate-950" />
                 </div>
               )}
               <div className={cn(
@@ -315,7 +311,7 @@ function ChatUI() {
                 message.role === 'user'
                   ? 'bg-gradient-to-r from-brand-600 to-brand-700 text-white border border-brand-500/30 animate-in slide-in-from-right-2 duration-300'
                   : cn(
-                      'bg-gradient-to-r from-white/10 to-white/5 text-white/90 border border-white/10 backdrop-blur-sm',
+                      'bg-white/90 text-foreground border border-border/60 backdrop-blur-sm dark:bg-white/10 dark:text-white/90 dark:border-white/10',
                       animatingMessage === message.id ? 'animate-in slide-in-from-left-2 duration-500 scale-105' : 'animate-in slide-in-from-left-2 duration-300'
                     )
               )}>
@@ -327,7 +323,7 @@ function ChatUI() {
                 </p>
                 {message.role === 'assistant' && (
                   <div className={cn(
-                    'mt-2 flex items-center gap-2 text-xs text-white/40 transition-opacity duration-500',
+                    'mt-2 flex items-center gap-2 text-xs text-muted-foreground transition-opacity duration-500 dark:text-white/60',
                     animatingMessage === message.id ? 'opacity-0 animate-in fade-in-50 duration-1000 delay-300' : 'opacity-100'
                   )}>
                     <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -338,14 +334,14 @@ function ChatUI() {
                 )}
               </div>
               {message.role === 'user' && (
-                <div className="h-8 w-8 rounded-full bg-gradient-to-br from-white/20 to-white/10 flex-shrink-0 mt-1 border border-white/20" />
+                <div className="mt-1 h-8 w-8 flex-shrink-0 rounded-full border border-border/60 bg-foreground/10 dark:border-white/20 dark:bg-white/10" />
               )}
             </div>
           ))}
           {isTyping && (
             <div className="flex gap-3 justify-start animate-in slide-in-from-bottom-2 duration-300">
               <div className="relative h-8 w-8 rounded-full bg-gradient-to-br from-brand-600 to-accent-500 flex-shrink-0">
-                <div className="h-full w-full rounded-full bg-slate-950 flex items-center justify-center overflow-hidden">
+                <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-background dark:bg-slate-950">
                   <Image
                     src="/logo.webp"
                     alt="INIIA Logo"
@@ -354,9 +350,9 @@ function ChatUI() {
                     className="h-4 w-4 object-contain animate-pulse"
                   />
                 </div>
-                <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-green-400 border border-slate-950 animate-pulse" />
+                <div className="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full border border-background bg-green-400 animate-pulse dark:border-slate-950" />
               </div>
-              <div className="rounded-2xl bg-gradient-to-r from-white/10 to-white/5 px-4 py-3 border border-white/10 backdrop-blur-sm">
+              <div className="rounded-2xl border border-border/60 bg-white/90 px-4 py-3 text-foreground backdrop-blur dark:border-white/10 dark:bg-white/10 dark:text-white">
                 <div className="flex gap-1">
                   <div className="h-2 w-2 rounded-full bg-brand-400 animate-bounce" />
                   <div className="h-2 w-2 rounded-full bg-brand-400 animate-bounce" style={{ animationDelay: '0.1s' }} />
@@ -369,7 +365,7 @@ function ChatUI() {
       </div>
 
       {/* Input */}
-      <div className="border-t border-white/10 px-6 py-4">
+      <div className="mt-4 rounded-2xl border border-border/60 bg-background/90 px-6 py-4 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5">
         <form
           className="flex gap-3"
           onSubmit={(e) => {
@@ -384,7 +380,7 @@ function ChatUI() {
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder={language === 'es' ? 'Pregunta de forma segura y privada...' : 'Ask securely and privately...'}
-              className="w-full rounded-xl border border-white/20 bg-black/40 px-4 py-3 pr-12 text-sm text-white placeholder:text-white/45 focus:outline-none focus:ring-2 focus:ring-brand-500/70 focus:border-brand-500/50 transition-all"
+              className="w-full rounded-xl border border-border/60 bg-white/90 px-4 py-3 pr-12 text-sm text-foreground placeholder:text-muted-foreground transition focus:outline-none focus:border-brand-500/40 focus:ring-2 focus:ring-brand-500/50 dark:border-white/20 dark:bg-white/10 dark:text-white dark:placeholder:text-white/60"
             />
             <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
               <svg className="h-4 w-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -399,14 +395,14 @@ function ChatUI() {
           >
             <span>{language === 'es' ? 'Enviar' : 'Send'}</span>
             <svg className={cn(
-              "h-4 w-4 transition-all duration-200",
-              !inputValue.trim() || isTyping ? "" : "group-hover:translate-x-0.5 group-hover:rotate-12"
+              'h-4 w-4 transition-all duration-200',
+              !inputValue.trim() || isTyping ? '' : 'group-hover:translate-x-0.5 group-hover:rotate-12'
             )} fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
             </svg>
           </button>
         </form>
-        <div className="mt-3 flex items-center justify-center gap-4 text-xs text-white/40">
+        <div className="mt-3 flex items-center justify-center gap-4 text-xs text-muted-foreground dark:text-white/70">
           <div className="flex items-center gap-1">
             <svg className="h-3 w-3 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />

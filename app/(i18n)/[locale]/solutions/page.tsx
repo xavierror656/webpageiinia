@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -52,13 +53,17 @@ export default async function SolutionsPage({ params: { locale } }: Props) {
             >
               {solution.card.backgroundImage && (
                 <>
-                  <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${solution.card.backgroundImage})` }}
-                    aria-hidden="true"
+                  <Image
+                    src={solution.card.backgroundImage}
+                    alt={solution.card.title[localeKey]}
+                    fill
+                    className="absolute inset-0 object-cover"
+                    priority={index === 0}
+                    quality={70}
+                    sizes="(min-width: 1024px) 45vw, 90vw"
                   />
                   <div
-                    className="absolute inset-0 bg-gradient-to-br from-white/92 via-white/75 to-white/55 dark:from-slate-950/92 dark:via-slate-950/70 dark:to-slate-950/50 backdrop-blur-md transition-colors"
+                    className="absolute inset-0 bg-gradient-to-br from-white/90 via-white/70 to-white/50 dark:from-slate-950/90 dark:via-slate-950/68 dark:to-slate-950/48 backdrop-blur-md transition-colors"
                     aria-hidden="true"
                   />
                 </>
